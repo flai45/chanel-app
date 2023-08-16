@@ -2,7 +2,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { useState, useEffect } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import Post from './post'
+import Post from './post.jsx'
 const supabase = createClient(
     'https://your-supabase-url.supabase.co',
     'your-api-key'
