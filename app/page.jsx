@@ -16,7 +16,7 @@ const { data: posts } = await supabase.from("posts").select();
     <ul>
       {posts?.map(post => (
         <li key={post.id}>
-          <Post src={post.imageUrl} text={post.text} />  
+          <Post src={post.image_url} text={post.text} />  
         </li>
       ))}
     </ul>

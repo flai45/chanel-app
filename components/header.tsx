@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <nav className="h-10 my-5 flex justify-between items-center">
             <Link href='/'>
-                <Image alt="logo" src='/favicon.png' height='40' width='40' />
+                <Image alt="logo" src='/logo.svg' height='40' width='40' />
             </Link>
             <Link href='/profile'>
                 <div className="flex justify-center items-center text-2xl">
