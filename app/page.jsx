@@ -1,5 +1,4 @@
 import React from 'react';
-import { createServerComponentClient } from "@supabase/auth-helpers-nextjs";
 
 import Post from "../components/post";
 import { createClient } from '@supabase/supabase-js'

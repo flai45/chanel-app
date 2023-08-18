@@ -1,7 +1,5 @@
 export default function About() {
-    return (
-        <>
-        <p>This is About page</p>
-        </>
+    return(
+        <p>Hello from about-page</p>
     )
 }
