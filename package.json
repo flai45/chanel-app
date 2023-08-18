@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@supabase/auth-helpers-nextjs": "latest",
-    "@supabase/supabase-js": "latest",
+    "@supabase/supabase-js": "^2.32.0",
     "next": "latest",
     "nightwind": "^1.1.13",
     "react": "18.2.0",
