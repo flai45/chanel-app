@@ -8,7 +8,9 @@ export default async function Home() {
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
 const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
-const supabase = createClient(supabaseUrl, supabaseKey)
+const supabase = createClient(supabaseUrl, supabaseKey, {
+  auth: { persistSession: false },
+})
 const { data: posts } = await supabase.from("posts").select();
   
   return (
