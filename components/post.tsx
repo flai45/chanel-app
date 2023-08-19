@@ -16,4 +16,4 @@ export default function Post({src, text}:{src:string, text:string}) {
         </div>
     
     )
-}
+} 
