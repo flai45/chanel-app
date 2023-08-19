@@ -4,22 +4,16 @@ import { BiLike } from 'react-icons/bi'
 export default function Post({src, text}:{src:string, text:string}) {
     
     return (
-        <div className="bg-gray-100 rounded mb-5 p-5 flex flex-сol gap-3 border border-gray-200 justify-between items-center hover:shadow-md hover:bg-white transition-all duration-500 shadow-sm group">
-            <div className=" overflow-hidden">
+       
+        <div className="grid grid-cols-5 grid-rows-6 gap-2  bg-gray-100 rounded mb-5 p-5 border border-gray-200 hover:shadow-md hover:bg-white transition-all duration-500 shadow-sm group">
+            <div className="col-span-3 row-span-5 rounded overflow-hidden">
                 <Image alt="post image" src={src} width='500' height='500' className="rounded transition-all duration-500 hover:scale-110"/>
             </div>
-            {/* <div className="relative top-0 right-0 left-0 bottom-0"> */}
-            <div className="flex flex-col justify-between w-[50%]">
-                <p className='rounded group-hover:bg-gray-200 transition-all duration-500 self-start'>{text}</p>
-                <div className="flex">
-                    <button className="flex rounded hover:bg-red-600 border-red-600 border-2 hover:text-white transition-all duration-500 self-start w-[100%] h-6 p-1 items-center justify-center">
-                       <BiLike/> 
-                       Like
-                    </button>
-                </div>
-            </div>
-            {/* </div> */}
+            <p className="col-span-2 row-span-5 col-start-4 rounded group-hover:bg-gray-200 transition-all duration-500">{text}</p>
+            <button className="col-span-5 row-start-6 rounded hover:bg-black border-black border-2 hover:text-white transition-all duration-500 h-10 flex items-center justify-center">
+            <BiLike/> Like
+            </button>
         </div>
-
+    
     )
 }
